@@ -2,4 +2,21 @@
 @import "common.scss";
 .wrap {
     @include num(100%, 100%);
+    @include box_flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header,
+footer {
+    @include num(100%, rem(44px));
+    @include flexs;
+    input {
+        border: 1px solid red;
+    }
+}
+
+section {
+    flex: 1;
+    overflow-y: auto;
 }

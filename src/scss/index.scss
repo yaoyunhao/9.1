@@ -1,0 +1,5 @@
+@import "_mixin.scss";
+@import "common.scss";
+.wrap {
+    @include num(100%, 100%);
+}
